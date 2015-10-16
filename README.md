@@ -1,6 +1,6 @@
 # ngx_mruby_filtersample
-結果にフィルタをかける処理をmruby_output_filterで実装しようとしたところ、上手くfilter処理がかからない。
-試行錯誤をしつつ空コード(何も処理しない)を入れたところで明らかにmruby_output_filterとmruby_output_filter_codeで動作が違っている。
+バックエンドからの応答にフィルタをかける処理をmruby_output_filterで実装しようとしたところ、上手くfilter処理がかからない。
+少しづつ機能を削っていくうちに、空コード(何も処理しない)を入れたところで明らかにmruby_output_filterとmruby_output_filter_codeで動作が違っていることに気付き、サンプルを作成した。
 
 ログを見たところmruby_output_filterで実装した方に、以下のエラーが発生している。
 ```
